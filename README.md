@@ -1,3 +1,5 @@
+**This project is not maintained - it was intended only as a demonstration. For proper information on how to wait for Docker containers with Compose, I've written a guide to [controlling startup order](https://docs.docker.com/compose/startup-order/).**
+
 `wait` is a really small Docker utility that blocks until another container is accepting TCP connections.
 
 Use it like this:
