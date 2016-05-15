@@ -2,8 +2,8 @@
 
 set -e
 
-host=$(env | grep _TCP_ADDR | cut -d = -f 2)
-port=$(env | grep _TCP_PORT | cut -d = -f 2)
+host=$(env | grep _TCP_ADDR | head -1 | cut -d = -f 2)
+port=$(env | grep _TCP_PORT | head -1 | cut -d = -f 2)
 
 echo -n "waiting for TCP connection to $host:$port..."
 
